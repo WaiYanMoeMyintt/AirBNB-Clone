@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+:root{
+    --nav-small-font-size:1.2rem;
+    --nav-font-color:#fff;
+    --nav-font-hover:rgb(177, 177, 177);
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    height:120vh;
+    font-family: 'Mukta', sans-serif;
+}
+header{
+    background-color:#000000;
+    width:100%;
+    height:200vh;
+}
+/*AirBNB navigation bar start*/
+.navbar-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items: center;
+    gap:25px;
+    padding:0 4%;
+    position: relative;
+    top:1.2%;
+    user-select: none;
+}
+.first-parent-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 35px;
+    position: relative;
+    left:55px;
+    top:0;
+}
+.second-parent-container{
+    display:flex;
+    gap:30px;
+    justify-content:space-evenly;
+}
+.white-logo{
+    max-width: 140px;
+    height:auto;
+}
+.first-parent-container a li  {
+    font-size:1.3rem;
+    color:#fff;
+    transition: color 0.2s ease-in-out 0s;
+}
+.text-child-item2:hover{
+    color:var(--nav-font-hover);
+}
+.text-child-item1:hover{
+    color:var(--nav-font-hover);
+}
+
+.second-text-child-1{
+    color:#fff;
+    font-size: var(nav-small-font-size);
+    border-radius: 30px;
+    z-index: 1;
+    padding:5px 20px;
+    margin:0 10px;
+    border:none;
+}
+.second-text-child-1:hover{
+    background-color:rgb(51, 51, 51);
+}
+.hamburger{
+    background-color:#fff;
+    padding:6px 15px;
+    border-radius: 35px;
+    display:flex;
+    gap:20px;
+    outline:none;
+    border:none;
+}
+.fa-user-circle{
+    color:rgb(88, 88, 88);
+    font-size:1.5rem;
+}
+.fa-bars{
+    font-size:1rem;
+    align-self: center;
+}
+.fa-globe{
+    color:#fff;
+    font-size:0.8rem;
+}
+.fa-globe{
+    color:#fff;
+    font-size:1.2rem;
+    align-self: center;
+    margin:8px 10px 0 0;
+}
+
+/*AirBNB navigation bar Ending*/
+
+/* AirBNB Search Bar Start  */
+
+.search-input-bar-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:30px;
+    flex-grow:2;
+    background-color:#fff;
+    position:relative;
+    top:30px;
+    height:70px;
+    margin:0 16.5%;
+    border-radius:55px;
+    user-select:none;
+    cursor:pointer;
+}
+form{
+    display:flex;
+    justify-content:space-around;
+    column-gap:20px;
+  
+}
+.location-input,
+.check-in-input,
+.check-out-input,
+.guests
+{
+   font-size:.9rem;
+    letter-spacing:1px;
+    font-weight:bold;
+    border-right:1px solid rgb(226, 226, 226);
+}
+
+form input{
+   display:block;
+   border:none;
+   outline:none;
+   background-color:transparent;
+   margin-top:8px;
+   color:rgb(71, 71, 71);
+   font-size:1em;
+}
+.header-submit,.search {
+    border:none;
+    background-color:#FF385C;
+    cursor:pointer;
+    padding:0 7px;
+    height:auto;
+    border-right:none;
+    color:#fff;
+    border-radius:50%;
+}
+.search{
+    align-self:center;
+    margin-top:3px;
+}
+.header-submit:hover{
+    color:#FF385C;
+}
+/* AirBNB Search Bar End */
+
+/* AirBNB header image start */
+.header-image-container{
+    height:100vh;
+    display:block;
+}
+.header-image{
+    display:block;
+    width:80%;
+    height:auto;
+    border-radius:15px;
+    text-align:center;
+    position:relative;
+    top:15%;
+    left:10%;
+}
+.header-control{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    position:absolute;
+    left:34%;
+    bottom:-34%;
+}
+.header-title{
+    user-select:auto;
+    height:50%;
+    color:#fff;
+    font-size:2.8rem;
+    font-weight:650;
+    letter-spacing:1.2px;
+}
+.header-button{
+    position:relative;
+    left:25%;
+    margin-top:15px;
+    background-color:#fff;
+    color:#72019B;
+    font-size:1.3rem;
+    font-weight:600;
+    text-align:center;
+    border-radius:30px;
+    width:150px;
+    padding:9px 0;
+    border:none;
+    letter-spacing:.6px;
+    outline:none;
+    cursor:pointer;
+    transition:all 0.3s ease-in-out 0s;
+}
+.header-button:hover{
+    background-color:rgb(255, 253, 253);
+    color:#bd5dd3;
+}
