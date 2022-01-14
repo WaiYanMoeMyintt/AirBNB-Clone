@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 :root{
     --nav-small-font-size:1.2rem;
     --nav-font-color:#fff;
@@ -19,7 +20,7 @@ body{
 header{
     background-color:#000000;
     width:100%;
-    height:200vh;
+    height:230vh;
 }
 /*AirBNB navigation bar start*/
 .navbar-container{
@@ -47,6 +48,19 @@ header{
     display:flex;
     gap:30px;
     justify-content:space-evenly;
+}
+hr{
+    width:20px;
+    display:block;
+    position: relative;
+    top:25px;
+    right:71%;
+    cursor:pointer;  
+    transition:transform .3s ease-in;  
+}
+hr:hover{
+    transform: scale(0.9);
+    color:rgb(233, 233, 233);
 }
 .white-logo{
     max-width: 140px;
@@ -170,26 +184,27 @@ form input{
 
 /* AirBNB header image start */
 .header-image-container{
-    height:100vh;
+    height:90vh;
     display:block;
 }
 .header-image{
     display:block;
-    width:80%;
+    width:90%;
     height:auto;
     border-radius:15px;
     text-align:center;
     position:relative;
-    top:15%;
-    left:10%;
+    top:12%;
+    left:5%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .4);
 }
 .header-control{
     display:flex;
     justify-content:center;
     flex-direction:column;
     position:absolute;
-    left:34%;
-    bottom:-34%;
+    left:30%;
+    bottom:-52%;
 }
 .header-title{
     user-select:auto;
@@ -198,10 +213,11 @@ form input{
     font-size:2.8rem;
     font-weight:650;
     letter-spacing:1.2px;
+    word-wrap: wrap;
 }
 .header-button{
     position:relative;
-    left:25%;
+    left:28%;
     margin-top:15px;
     background-color:#fff;
     color:#72019B;
@@ -221,3 +237,164 @@ form input{
     background-color:rgb(255, 253, 253);
     color:#bd5dd3;
 }
+
+.gift-image{
+    margin-top:19%;
+    display:block;
+    width:90%;
+    height:auto;
+    border-radius:15px;
+    text-align:center;
+    position:relative;
+    top:45%;
+    left:5%;
+   
+}
+/* AirBNB header image End */
+
+/* Section Start */
+
+section{
+    height:90vh;
+    position:relative;
+    top:45%;
+    user-select: none;
+}
+
+/* Travel Image Container Start */
+
+.travel-image-container{
+    padding:0;
+    margin-top:10px;
+    display:flex;
+    flex-flow: row-reverse wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    flex-grow: 2;
+    border-radius: 20px;
+}
+.section-title{
+    font-size:2.3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    position:relative;
+    left:5%;
+    bottom: 40px;
+}
+.travel-item-1{
+    background-color: #CC2D4A;
+    height:400px;
+    border-radius: 15px;
+}
+.travel-item-2{
+    background-color: #DE3151;
+    height:400px;
+    border-radius:15px;
+}
+.travel-item-3{
+    background-color: #BC1A6E;
+    height:400px;
+    border-radius: 15px;
+}
+.travel-item-4{
+    background-color: #D93B30;
+    height:400px;
+    border-radius: 15px;
+}
+.travel-img-1{
+    width:270px;
+    height:auto;
+    border-radius: 15px;
+}
+.travel-img-2{
+    width:270px;
+    height:auto;
+    border-radius: 15px;
+}
+.travel-img-3{
+    width:270px;
+    height:auto;
+    border-radius: 15px;
+}
+.travel-img-4{
+    width:270px;
+    height:auto;
+    border-radius: 15px;
+}
+.travel-title-1{
+    font-size:1.8rem;
+    font-weight: 900;
+    color:#fff;
+    line-height: 30px;
+    position: relative;
+    top:3%;
+    left:8%;
+    letter-spacing:1.2px;
+}
+.travel-title-2{
+    font-size:1.8rem;
+    font-weight: 900;
+    color:#fff;
+    line-height: 30px;
+    position: relative;
+    top:3%;
+    left:8%;
+    letter-spacing:1.2px;
+}
+.travel-title-3{
+    font-size:1.8rem;
+    font-weight: 900;
+    color:#fff;
+    line-height: 30px;
+    position: relative;
+    top:3%;
+    left:8%;
+    letter-spacing:1.2px;
+}
+.travel-title-4{
+    font-size:1.8rem;
+    font-weight: 900;
+    color:#fff;
+    line-height: 30px;
+    position: relative;
+    top:3%;
+    left:8%;
+    letter-spacing:1.2px;
+}
+.travel-sub-title-1{
+    font-size:1.1rem;
+    font-weight: 550;
+    color:#fff;
+    position: relative;
+    top:5%;
+    left:8%;
+    
+}
+.travel-sub-title-2{
+    font-size:1.1rem;
+    font-weight: 550;
+    color:#fff;
+    position: relative;
+    top:5%;
+    left:8%;
+}
+
+.travel-sub-title-3{
+    font-size:1.1rem;
+    font-weight: 550;
+    color:#fff;
+    position: relative;
+    top:5%;
+    left:8%;
+}
+.travel-sub-title-4{
+    font-size:1.1rem;
+    font-weight: 550;
+    color:#fff;
+    position: relative;
+    top:5%;
+    left:8%;
+}
+
+/* Travel Image Container End */
