@@ -49,7 +49,7 @@ header{
     gap:30px;
     justify-content:space-evenly;
 }
-hr{
+.navbar-hr{
     width:20px;
     display:block;
     position: relative;
@@ -110,6 +110,10 @@ hr:hover{
 .fa-globe{
     color:#fff;
     font-size:0.8rem;
+    transition: transform .7s ease;
+}
+.fa-globe:hover{
+    transform: scale(1.12);
 }
 .fa-globe{
     color:#fff;
@@ -172,12 +176,14 @@ form input{
     border-right:none;
     color:#fff;
     border-radius:50%;
+    transition:transform .7s ease;
 }
 .search{
     align-self:center;
     margin-top:3px;
 }
 .header-submit:hover{
+    transform: scale(.925);
     color:#FF385C;
 }
 /* AirBNB Search Bar End */
@@ -231,11 +237,45 @@ form input{
     letter-spacing:.6px;
     outline:none;
     cursor:pointer;
-    transition:all 0.3s ease-in-out 0s;
+    transition:transform  .4s ease-in;
+    animation: header-btn 3s 1s linear  infinite;
 }
 .header-button:hover{
+    transform: scale(0.965);
     background-color:rgb(255, 253, 253);
     color:#bd5dd3;
+}
+@keyframes header-btn {
+    10%{
+        color:#bd5dd3;
+    }
+    30%{
+        color:#d878ee;
+    }
+    45%{
+        color:#933cb3;
+    }
+    50%{
+        color:#a31cd4;
+    }
+    55%{
+        color:#c83efa;
+    }
+    65%{
+        color:#d368fa;
+    }
+    75%{
+        color:#bd33f0;
+    }
+    85%{
+        color:#c061e2;
+    }
+    90%{
+        color:#be4ae9;
+    }
+    100%{
+        color:#d057fc;
+    }    
 }
 
 .gift-image{
@@ -398,3 +438,254 @@ section{
 }
 
 /* Travel Image Container End */
+
+/* Travel experience Start */
+main{
+    height:110vh;
+    position:relative;
+    top:25%;
+    user-select: none;
+    padding:0 2%;
+}
+.experience-title{
+    font-size:2.3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    position:relative;
+    left:2%;
+    bottom: 40px;
+}
+.experience-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap-reverse;
+}
+.exp-img-1{
+    width:600px;
+    height:500px;
+    border-radius: 15px;
+}
+.exp-img-2{
+    width:600px;
+    height:500px;
+    border-radius: 15px;
+}
+.exp-sec-1{
+  position: relative;
+  left:6%;
+  transform:translateY(-250%);
+}
+.exp-sec-2{
+    position: relative;
+    left:6%;
+    transform:translateY(-250%);
+}
+.exp-title-1{
+    font-size:2.5rem;
+    font-weight: 900;
+    color:#fff;
+    user-select: text;
+    word-wrap: wrap;
+}
+.exp-title-2{
+    font-size:2.5rem;
+    font-weight: 900;
+    color:#fff;
+    user-select: text;
+    word-wrap: wrap;
+}
+.exp-btn-1{
+    cursor: pointer;
+    padding:16px 25px;
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+    border: none;
+    outline:none;
+    font-size: 1.2rem;
+    font-weight: normal;
+    border-radius: 12px;
+    transition: transform .8s ease;
+}
+.exp-btn-2{
+    cursor: pointer;
+    padding:16px 20px;
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+    border: none;
+    outline:none;
+    font-size: 1.2rem;
+    font-weight: normal;
+    border-radius: 12px;
+    transition: transform .8s ease;
+}
+.exp-btn-1:hover{
+    transform:scale(.925);
+    background-color: rgb(233, 233, 233);
+}
+.exp-btn-2:hover{
+    transform:scale(.925);
+    background-color: rgb(233, 233, 233);
+}
+
+/* Travel experience Start */
+
+/* Airbnb Host Section Start */
+
+.host-heading{
+    position:relative;
+    top:25%;
+    margin:0;
+    background-image: url("../images/host.jpg");
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.host-sub-heading{
+    padding:3% 5%;
+    display: flex;
+    flex-flow:column wrap;
+}
+.host-title{
+    line-height:80px;
+    font-size:4.5rem;
+    font-weight:bolder;
+    color:#fff;
+    word-wrap: wrap;
+}
+.host-btn{
+    position:absolute;
+    bottom:50px;
+    display: block;
+    cursor: pointer;
+    padding:14px 23px;
+    background-color: #fff;
+    color:rgb(0, 0, 0);
+    border: none;
+    outline:none;
+    font-size: 1.2rem;
+    font-weight: normal;
+    border-radius: 12px;
+    transition: transform .8s ease;
+}
+.host-btn:hover{
+    transform:scale(.925);
+    background-color: rgb(233, 233, 233);
+}
+/* Airbnb Host Section End */
+
+/* footer section start  */
+
+.footer-section{
+    height: 65vh;
+    background-color: #F7F7F7;
+    position:relative;
+    bottom: -220%;
+    
+}
+.footer-section h1{
+    font-size:3rem;
+    color:#333;
+}
+.footer-content-section{
+    padding:2% 2%;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap:35px;
+}
+.footer-title-1{
+    display: flex;
+    flex-direction:column;
+    padding:20px 0;
+    row-gap:10px;
+    flex-wrap: wrap;
+}
+.footer-title-1 a ,
+.footer-title-2 a,
+.footer-title-3 a,
+.footer-title-4 a {
+    color:#000000;
+}
+.footer-hr{
+    width:92%;
+    margin:0 4%;
+    background-color:rgb(241, 241, 241);
+}
+.footer-title-2{
+    display: flex;
+    flex-direction:column;
+    padding:20px 0;
+    row-gap:10px;
+    flex-wrap: wrap;
+}
+.footer-title-3{
+    display: flex;
+    flex-direction:column;
+    padding:20px 0;
+    row-gap:10px;
+    flex-wrap: wrap;
+}
+.footer-title-4{
+    display: flex;
+    flex-direction:column;
+    padding:20px 0;
+    row-gap:10px;
+    flex-wrap: wrap;
+}
+.footer-sub-title-1,
+.footer-sub-title-2,
+.footer-sub-title-3,
+.footer-sub-title-4
+{
+    font-size:1.045rem;
+    font-weight: 850;
+    color:#000000;
+}
+.footer-navbar{
+    margin:3% 0;
+    padding:0 5%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap:20px;
+}
+.footer-navbar-section-1{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.footer-navbar-section-2{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.footer-link{
+    font-size:1.045rem;
+    color:#333;
+}
+.footer-link-2{
+    font-size:1.045rem;
+    color:#000000;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.fa-facebook-f{
+    cursor: pointer;
+    font-size:1.1rem;
+    margin-top:5px;
+    margin-left:4px;
+}
+.fa-twitter{
+    cursor: pointer;
+    font-size:1.1rem;
+    margin-top:5px;
+    margin-left:4px;
+}
+.fa-instagram{
+    cursor: pointer;
+    font-size:1.1rem;
+    margin-top:5px;
+    margin-left:4px;
+}
