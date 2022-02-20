@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Rubik:wght@300&display=swap');
 :root{
     --nav-small-font-size:1.2rem;
     --nav-font-color:#fff;
@@ -688,4 +689,64 @@ main{
     font-size:1.1rem;
     margin-top:5px;
     margin-left:4px;
+}
+.section-title-container{
+    margin:0;
+    position: relative;
+
+}
+.section-title-container{
+  position:relative;
+  top:220%;
+  width:100%;
+  height:130vh;
+  margin-top:5%;
+  user-select:none;
+}
+.future-title{
+    font-size:2.3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    position:relative;
+    left:2%;
+    bottom: 40px;
+}
+.exclusives{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 60px;
+    padding:0 15px;
+}
+.exclusives div a img{
+    width:100%;
+    height:300px;
+    border-radius:8px;
+}
+.exclusives div{
+    position:relative;
+}
+.exclusives span{
+    position:absolute;
+    top:95%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:#fff;
+    font-size:1rem;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 1px;
+}
+.exclusives span p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    color:#FF385C;    
+    margin:20px 0;
+    letter-spacing: 1px;
+    transition:transform 2s 0s ease-in;
+    cursor: pointer;
+}
+.exclusives div a img:hover{
+    transform:scale(.929);
+    opacity: .8;
 }
